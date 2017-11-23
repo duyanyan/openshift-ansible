@@ -514,7 +514,7 @@ def set_contiv_facts_if_unset(facts):
     """
     if 'common' in facts:
         if 'use_contiv' not in facts['common']:
-            use_contiv = False
+            use_contiv = True
             facts['common']['use_contiv'] = use_contiv
     return facts
 
